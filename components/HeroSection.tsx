@@ -55,7 +55,8 @@ const HeroSection = () => {
               </span> and <span className="text-ytclr">Graphics Programming.</span> More
               specifically, I am interested in documenting and implementing work
               pertaining to: <span className="text-txtclr">
-              Audio Processing, Databases, </span> and <span className="text-txtclr"> Physically Based Renderers.</span> 
+              Computer Vision, Information Retrieval, Databases, </span> and <span className="text-txtclr"> 
+              Physically Based Renderers.</span> 
             </p>
           </div>
         </div>
@@ -76,11 +77,11 @@ const HeroSection = () => {
         {/* Div for the entire Featured Project container */}
         <FeaturedProject
           title="Ray-Tracer"
-          description="A graphic ray-tracer built from scratch, optimized with CUDA"
+          description="A multi-threaded ray-tracer built from scratch"
           imageUrl="/nvidiart.png"
           githubLink="https://github.com/oscarabreu/Multithreaded-Path-Tracer"
           liveLink="https://google.com"
-          tags={["C++", "CUDA", "Thrust", "cuRAND", "NVRTC"]}
+          tags={["C++", "CUDA", "cuRAND", "NVRTC"]}
         />
         <hr />
         <div className="flex flex-col md:flex-row text-sm">

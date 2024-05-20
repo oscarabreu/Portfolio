@@ -4,9 +4,7 @@ export const featuredProjects: Project[] = [
   {
     title: "Multithreaded Ray Tracer",
     category: "Graphics",
-    description: `I implemented a multithreaded ray tracer in C++ and optimized the rendering 
-    efficiency with multi-threading via thread-pooling,  
-    leading to an overall >300% optimization in image-rendering with respect to the first single-threaded version.`,
+    description: `A multithreaded ray tracer in C++ with advanced material modeling, and efficient data-structures. Ongoing Project.`,
     technologies: ["C++", "CUDA", "NVRTC"],
     imageSrc: "/nvidiart.png",
     githubLink: "https://github.com/project-link",
@@ -75,7 +73,7 @@ export const featuredProjects: Project[] = [
   {
     title: "FabledFungi API",
     category: "Web",
-    description: `FabledFungi is a unique API hosted on AWS, born from a rich dataset of mushroom observations, spanning from 2008 to 2015, sourced from iNaturalist. At its core, FabledFungi is designed to fetch random mushroom observation data, providing users not just with the image URL but also with a wealth of related metadata for each observation.
+    description: `FabledFungi is a unique API hosted on AWS, designed to fetch random mushroom observations with a wealth of related metadata for each observation.
     `,
     technologies: ["Go", "VPC", "DyanmoDB", "Redis", "Lambdas", "S3", "Python", "Typescript"],
     imageSrc: "/fungi.jpg",
@@ -85,7 +83,7 @@ export const featuredProjects: Project[] = [
   {
     title: "Upscaling the Dense Residual Connection Transformer",
     category: "Machine Learning",
-    description: ` Improving DRCT 4x super-resolution model stability through post-normalization, cosine attention, and log-spaced continuous position bias for Shifted Window Transformer Attention block. In addition, leveraged CUDA Kernels, FlashAttention, Pruning, and Quantization for improved inference latency.`,
+    description: ` Improving DRCT 4x super-resolution model stability through post-normalization, cosine attention, and log-spaced continuous position bias. `,
     technologies: ["Python", "Pytorch", "WandB", "ONNX", "CUDA", "MLFlow", "SageMaker", "Torchscript"],
     imageSrc: "/DRCT4.png",
     githubLink: "https://github.com/oscarabreu/hpml_final",

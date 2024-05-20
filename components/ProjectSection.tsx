@@ -53,11 +53,11 @@ const ProjectSection = () => {
   return (
     <section id="home">
       <div className="flex flex-col max-w-5xl m-auto text-txtclr text-lg">
-        <div className="flex justify-center md:justify-start pt-4 pb-12">
+        <div className="flex justify-center md:justify-start py-4">
           <Nav />
         </div>
-        <h1 className="text-4xl pb-2 font-bold max-md:text-center">Projects</h1>
-        <div className="flex flex-col md:flex-row pb-0 justify-between">
+        <h1 className="text-4xl py-5 font-bold max-md:text-center">Projects</h1>
+        <div className="flex flex-col md:flex-row  justify-between">
           <div className="flex flex-col space-y-2 md:w-2/5">
             <h4 className="text-sm text-gray-500 max-md:text-center">By name</h4>
             <div className="relative pb-4">

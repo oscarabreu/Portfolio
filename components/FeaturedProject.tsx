@@ -14,19 +14,9 @@ interface FeaturedProjectProps {
 const FeaturedProject: React.FC<FeaturedProjectProps> = ({ title, description, imageUrl, githubLink, liveLink, tags }) => {
   return (
     <div className="flex flex-row h-auto justify-center items-center py-4">
-      <div>
-        <a
-          className="flex items-center hover:text-txtclr text-3xl mr-4"
-          href={githubLink}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <AiFillCaretLeft />
-        </a>
-      </div>
       <div className="relative flex">
         <div
-          className="flex flex-col justify-between md:items-start max-md:absolute max-md:items-center max-md:justify-center max-md:space-y-4 
+          className="flex flex-col justify-around md:items-start max-md:absolute max-md:items-center max-md:justify-around max-md:space-y-4 
                       top-0 left-0 right-0 bottom-0 z-20 lg:w-1/2  text-sm"
         >
           <h3 className="text-2xl font-bold text-txtclr">{title}</h3>
@@ -59,7 +49,7 @@ const FeaturedProject: React.FC<FeaturedProjectProps> = ({ title, description, i
         </div>
         <div>
           <Image
-            className="flex max-md:opacity-20 py-2 max-h-300 mx-auto rounded"
+            className="flex max-md:opacity-20  mx-auto rounded"
             src={imageUrl}
             alt={title}
             width={900}
@@ -67,16 +57,6 @@ const FeaturedProject: React.FC<FeaturedProjectProps> = ({ title, description, i
             priority
           />
         </div>
-      </div>
-      <div>
-        <a
-          className="flex items-center hover:text-txtclr text-3xl ml-4"
-          href={githubLink}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <AiFillCaretRight />
-        </a>
       </div>
     </div>
   );
