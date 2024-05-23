@@ -1,4 +1,4 @@
-import { Project } from 'types'; // Import the Project type
+import { Project } from 'types'; 
 
 export const featuredProjects: Project[] = [
   {
@@ -7,7 +7,7 @@ export const featuredProjects: Project[] = [
     description: `A multithreaded ray tracer in C++ with advanced material modeling, and efficient data-structures. Ongoing Project.`,
     technologies: ["C++", "CUDA", "NVRTC"],
     imageSrc: "/nvidiart.png",
-    githubLink: "https://github.com/project-link",
+    githubLink: "https://github.com/oscarabreu/Multithreaded-Path-Tracer",
   },
   {
     title: "Wireframe Renderer",
@@ -16,7 +16,7 @@ export const featuredProjects: Project[] = [
     composed of a model loader class, geometric utilities, TGA image handling and Bresehnham's line drawing algorithm.`,
     technologies: ["C++", "SDL2", "OpenGL"],
     imageSrc: "/african.png",
-    githubLink: "https://github.com/project-link",
+    githubLink: "https://github.com/oscarabreu/Wireframe-Renderer",
   },
   {
     title: "Respiration Rate Detection",

@@ -1,35 +1,25 @@
-/** @format */
-
 "use client";
-import React, { useState } from "react";
+
+import React, { useState, Suspense, lazy } from "react";
 import Nav from "@/components/Nav";
-import { featuredProjects } from "@/public/data/projectList"; // Make sure this is correctly imported
-import ProjectItem from "@/components/ProjectItem";
-import Link from "next/link";
-import { Project } from 'types'; // Import the Project type
+import { featuredProjects } from "@/public/data/projectList";
+import { Project } from 'types';
+
+const ProjectItem = lazy(() => import("@/components/ProjectItem"));
 
 interface ProfItem {
   label: string;
 }
 
 const PROF_ITEMS: Array<ProfItem> = [
-  {
-    label: "Machine Learning",
-  },
-  {
-    label: "Graphics",
-  },
-  {
-    label: "Systems",
-  },
-  {
-    label:"Web"
-  },
-  {
-    label: "All",
-  },
+  { label: "Machine Learning" },
+  { label: "Graphics" },
+  { label: "Systems" },
+  { label: "Web" },
+  { label: "All" },
 ];
-const ProjectSection = () => {
+
+const ProjectSection: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState("All");
 
@@ -52,7 +42,7 @@ const ProjectSection = () => {
 
   return (
     <section id="home">
-      <div className="flex flex-col max-w-5xl m-auto text-txtclr text-lg">
+      <div className="flex flex-col max-w-4xl m-auto text-txtclr text-lg">
         <div className="flex justify-center md:justify-start py-4">
           <Nav />
         </div>
@@ -108,17 +98,19 @@ const ProjectSection = () => {
         </div>
         <hr />
         <div className="flex flex-col py-6 justify-evenly">
-          {filteredProjects.map((project, idx) => (
-            <ProjectItem
-              key={idx}
-              title={project.title}
-              category={project.category}
-              description={project.description}
-              technologies={project.technologies}
-              imageSrc={project.imageSrc}
-              githubLink={project.githubLink}
-            />
-          ))}
+          <Suspense fallback={<div>Loading...</div>}>
+            {filteredProjects.map((project, idx) => (
+              <ProjectItem
+                key={idx}
+                title={project.title}
+                category={project.category}
+                description={project.description}
+                technologies={project.technologies}
+                imageSrc={project.imageSrc}
+                githubLink={project.githubLink}
+              />
+            ))}
+          </Suspense>
         </div>
       </div>
     </section>

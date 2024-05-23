@@ -25,7 +25,7 @@ const skills = [
 const HeroSection = () => {
   return (
     <section id="home">
-      <div className="flex flex-col max-w-5xl m-auto text-txtclr text-lg">
+      <div className="flex flex-col max-w-4xl m-auto text-txtclr text-lg">
         <div className="flex justify-center md:justify-start py-4">
           <Nav />
         </div>
@@ -80,7 +80,6 @@ const HeroSection = () => {
           description="A multi-threaded ray-tracer built from scratch"
           imageUrl="/nvidiart.png"
           githubLink="https://github.com/oscarabreu/Multithreaded-Path-Tracer"
-          liveLink="https://google.com"
           tags={["C++", "CUDA", "cuRAND", "NVRTC"]}
         />
         <hr />

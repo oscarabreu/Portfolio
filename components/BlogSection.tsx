@@ -36,7 +36,7 @@ interface ProfItem {
 const BlogSection = () => {
   return (
     <section id="home">
-      <div className="flex flex-col max-w-5xl m-auto text-txtclr text-lg">
+      <div className="flex flex-col max-w-4xl m-auto text-txtclr text-lg">
         <div className="flex justify-center md:justify-start pt-4 pb-7">
           <Nav></Nav>
         </div>
