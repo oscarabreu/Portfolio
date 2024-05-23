@@ -57,7 +57,7 @@ const ProjectSection = () => {
           <Nav />
         </div>
         <h1 className="text-4xl py-5 font-bold max-md:text-center">Projects</h1>
-        <div className="flex flex-col md:flex-row  justify-between">
+        <div className="flex flex-col md:flex-row justify-between">
           <div className="flex flex-col space-y-2 md:w-2/5">
             <h4 className="text-sm text-gray-500 max-md:text-center">By name</h4>
             <div className="relative pb-4">
@@ -117,7 +117,6 @@ const ProjectSection = () => {
               technologies={project.technologies}
               imageSrc={project.imageSrc}
               githubLink={project.githubLink}
-              projectLink={project.projectLink}
             />
           ))}
         </div>

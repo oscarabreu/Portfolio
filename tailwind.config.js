@@ -51,9 +51,9 @@ module.exports = {
         body4: "Roboto",
       },
       colors: {
-        bgclr: "#1c1d1f",
-        txtclr: "#cccccc",
-        txtclr2: "#5858e6",
+        bgclr: "#030617",
+        txtclr: "#bbbbba",
+        txtclr2: "#ffffff",
         hclr: "#5858e6",
       },
       maxWidth: {

@@ -9,7 +9,6 @@ interface ProjectProps {
   technologies: string[];
   imageSrc: string;
   githubLink: string;
-  projectLink: string;
 }
 
 const ProjectItem: React.FC<ProjectProps> = ({
@@ -19,7 +18,6 @@ const ProjectItem: React.FC<ProjectProps> = ({
   technologies,
   imageSrc,
   githubLink,
-  projectLink,
 }) => {
   return (
     <div className="flex flex-row my-4 relative justify-center min-h-[275px]">
@@ -51,14 +49,6 @@ const ProjectItem: React.FC<ProjectProps> = ({
             rel="noreferrer"
           >
             <AiOutlineGithub />
-          </a>
-          <a
-            className="text-txtclr hover:text-txtclr"
-            href={projectLink}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <AiOutlineApartment />
           </a>
         </div>
       </div>

@@ -8,7 +8,6 @@ export const featuredProjects: Project[] = [
     technologies: ["C++", "CUDA", "NVRTC"],
     imageSrc: "/nvidiart.png",
     githubLink: "https://github.com/project-link",
-    projectLink: "",
   },
   {
     title: "Wireframe Renderer",
@@ -18,7 +17,6 @@ export const featuredProjects: Project[] = [
     technologies: ["C++", "SDL2", "OpenGL"],
     imageSrc: "/african.png",
     githubLink: "https://github.com/project-link",
-    projectLink: "",
   },
   {
     title: "Respiration Rate Detection",
@@ -29,7 +27,6 @@ export const featuredProjects: Project[] = [
     technologies: ["C++", "STM32", "GPIO", "I2C", "RCC", "BME680"],
     imageSrc: "/stm32.png",
     githubLink: "https://github.com/oscarabreu/Embedded-Mask---Respiration-Rate-Detection/tree/main",
-    projectLink: "",
   },
   {
     title: "File I/O Benchmark Tool",
@@ -39,7 +36,6 @@ export const featuredProjects: Project[] = [
     technologies: ["C++"],
     imageSrc: "/linux.png",
     githubLink: "https://github.com/oscarabreu/File-IO-Performance-Tool",
-    projectLink: "",
   },
   {
     title: "Redis - K/V Database",
@@ -49,7 +45,6 @@ export const featuredProjects: Project[] = [
     technologies: ["C++"],
     imageSrc: "/redis2.png",
     githubLink: "https://github.com/oscarabreu/K-V-Store",
-    projectLink: "",
   },
   {
     title: "Relational Database",
@@ -59,7 +54,6 @@ export const featuredProjects: Project[] = [
     technologies: ["Go", "net/http"],
     imageSrc: "/relational.png",
     githubLink: "https://github.com/oscarabreu/Relational-Database",
-    projectLink: "",
   },
   {
     title: "Mandelbrot Set",
@@ -68,7 +62,6 @@ export const featuredProjects: Project[] = [
     technologies: ["C++", "SDL2"],
     imageSrc: "/mandelbrot.png",
     githubLink: "https://github.com/oscarabreu/Mandelbrot-Viewer",
-    projectLink: "",
   },
   {
     title: "FabledFungi API",
@@ -78,7 +71,6 @@ export const featuredProjects: Project[] = [
     technologies: ["Go", "VPC", "DyanmoDB", "Redis", "Lambdas", "S3", "Python", "Typescript"],
     imageSrc: "/fungi.jpg",
     githubLink: "https://github.com/oscarabreu/FabledFungi?tab=readme-ov-file",
-    projectLink: "",
   },
   {
     title: "Upscaling the Dense Residual Connection Transformer",
@@ -87,7 +79,6 @@ export const featuredProjects: Project[] = [
     technologies: ["Python", "Pytorch", "WandB", "ONNX", "CUDA", "MLFlow", "SageMaker", "Torchscript"],
     imageSrc: "/DRCT4.png",
     githubLink: "https://github.com/oscarabreu/hpml_final",
-    projectLink: "",
   },
 
 

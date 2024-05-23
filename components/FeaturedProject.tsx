@@ -52,8 +52,8 @@ const FeaturedProject: React.FC<FeaturedProjectProps> = ({ title, description, i
             className="flex max-md:opacity-20  mx-auto rounded"
             src={imageUrl}
             alt={title}
-            width={900}
-            height={600}
+            width={1500}
+            height={900}
             priority
           />
         </div>
