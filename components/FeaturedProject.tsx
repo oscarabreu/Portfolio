@@ -46,6 +46,8 @@ const FeaturedProject: React.FC<FeaturedProjectProps> = ({ title, description, i
             width={1500}
             height={900}
             priority
+            placeholder="blur"
+            blurDataURL="/path-to-low-res-placeholder-image.jpg"
           />
         </div>
       </div>

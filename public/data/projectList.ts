@@ -80,8 +80,5 @@ export const featuredProjects: Project[] = [
     imageSrc: "/DRCT4.png",
     githubLink: "https://github.com/oscarabreu/hpml_final",
   },
-
-
-
   
 ];

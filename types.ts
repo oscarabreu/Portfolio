@@ -6,3 +6,12 @@ export interface Project {
     imageSrc: string;
     githubLink: string;
   }
+
+  export interface Blog {
+    title: string;
+    category: string;
+    description: string;
+    technologies: string[];
+    date: string;
+    slug: string;
+  }

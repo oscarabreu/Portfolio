@@ -1,7 +1,5 @@
-"use client";
 import React from "react";
 import Nav from "@/components/Nav";
-import Image from "next/image";
 import Profile from "@/components/Profile";
 import ReadingList from "@/components/ReadingList";
 import FeaturedBlog from "./FeaturedBlog";
@@ -13,7 +11,16 @@ import {
   AiFillCaretRight,
 } from "react-icons/ai";
 import { BsArrowUpRight } from "react-icons/bs";
-import { featuredProjects } from "data";
+
+interface HeroSectionProps {
+  featuredProject: {
+    title: string;
+    description: string;
+    imageUrl: string;
+    githubLink: string;
+    tags: string[];
+  };
+}
 
 const skills = [
   "C++", "CUDA", "OpenGL", "SDL2", "Go", "Python", "Numpy/Pandas", "TensorFlow",
@@ -22,7 +29,7 @@ const skills = [
   "S3","VPC"
 ];
 
-const HeroSection = () => {
+const HeroSection: React.FC<HeroSectionProps> = ({ featuredProject }) => {
   return (
     <section id="home">
       <div className="flex flex-col max-w-4xl m-auto text-txtclr text-lg">
@@ -76,11 +83,11 @@ const HeroSection = () => {
         <hr />
         {/* Div for the entire Featured Project container */}
         <FeaturedProject
-          title="Ray-Tracer"
-          description="A multi-threaded ray-tracer built from scratch"
-          imageUrl="/nvidiart.png"
-          githubLink="https://github.com/oscarabreu/Multithreaded-Path-Tracer"
-          tags={["C++", "CUDA", "cuRAND", "NVRTC"]}
+          title={featuredProject.title}
+          description={featuredProject.description}
+          imageUrl={featuredProject.imageUrl}
+          githubLink={featuredProject.githubLink}
+          tags={featuredProject.tags}
         />
         <hr />
         <div className="flex flex-col md:flex-row text-sm">

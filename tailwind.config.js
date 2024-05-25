@@ -55,6 +55,7 @@ module.exports = {
         txtclr: "#bbbbba",
         txtclr2: "#ffffff",
         hclr: "#5858e6",
+        ytclr: "ffffff"
       },
       maxWidth: {
         100: "100rem",
