@@ -62,10 +62,14 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     };
   }
 
-  const markdownWithMeta = fs.readFileSync(
-    path.join('content', `${slug}.mdx`),
-    'utf-8'
-  );
+  const filePath = path.join('content', `${slug}.mdx`);
+  if (!fs.existsSync(filePath)) {
+    return {
+      notFound: true,
+    };
+  }
+
+  const markdownWithMeta = fs.readFileSync(filePath, 'utf-8');
   const { content, data } = matter(markdownWithMeta);
   const mdxSource = await serialize(content, { scope: data });
 
