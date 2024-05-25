@@ -14,7 +14,7 @@ async function fetchFeaturedProject() {
   return {
     title: "Ray-Tracer",
     description: "A multi-threaded ray-tracer built from scratch",
-    imageUrl: "/nvidiart.png",
+    imageUrl: "/nvidiart.webp",
     githubLink: "https://github.com/oscarabreu/Multithreaded-Path-Tracer",
     tags: ["C++", "CUDA", "cuRAND", "NVRTC"],
   };

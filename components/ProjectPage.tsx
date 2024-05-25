@@ -19,7 +19,7 @@ const PROF_ITEMS = [
   { label: "All" },
 ];
 
-const ITEMS_PER_PAGE = 5;
+const ITEMS_PER_PAGE = 4;
 
 const ProjectPage: React.FC<ProjectPageProps> = ({ projects, searchQuery, activeCategory }) => {
   const [filteredProjects, setFilteredProjects] = useState<Project[]>(projects);

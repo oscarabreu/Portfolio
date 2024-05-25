@@ -6,11 +6,17 @@ interface ReadingItemProps {
   imageUrl: string;
   notesLink: string;
   bookName: string;
-  bookAuthor: string,
-  description: string,
+  bookAuthor: string;
+  description: string;
 }
 
-const ReadingItem: React.FC<ReadingItemProps> = ({ imageUrl, notesLink, bookName, bookAuthor, description }) => {
+const ReadingItem: React.FC<ReadingItemProps> = ({
+  imageUrl,
+  notesLink,
+  bookName,
+  bookAuthor,
+  description,
+}) => {
   return (
     <div className="flex justify-evenly">
       <a
@@ -26,17 +32,18 @@ const ReadingItem: React.FC<ReadingItemProps> = ({ imageUrl, notesLink, bookName
           alt={bookName}
           width={100}
           height={125}
+          style={{ width: 'auto', height: 'auto' }} // Maintain aspect ratio
           className="justify-center items-center"
         />
       </div>
       <div className="flex flex-col justify-center space-y-1 text-left md:text-center text-txtclr w-3/4 px-2 py-4 max-h-300">
         <h4>{bookName}</h4>
-        <h4 className='text-sm'>{bookAuthor}</h4>
-        <h6 className='text-xs text-gray-500'>{description}</h6>
+        <h4 className="text-sm">{bookAuthor}</h4>
+        <h6 className="text-xs text-gray-500">{description}</h6>
         <h4>
-            <a href={notesLink} className="underline hover:text-txtclr">
+          <a href={notesLink} className="underline hover:text-txtclr">
             Notes Here
-            </a>
+          </a>
         </h4>
       </div>
       <a

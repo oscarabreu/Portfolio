@@ -24,9 +24,10 @@ const ProjectItem: React.FC<ProjectProps> = ({
       <div className="flex-grow relative flex justify-center items-center max-md:opacity-20 overflow-hidden rounded h-[275px]">
         <Image
           src={imageSrc}
-          objectFit="cover"
-          fill
           alt={title}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          style={{ objectFit: "cover" }}
           className="rounded transition-transform duration-500"
         />
       </div>

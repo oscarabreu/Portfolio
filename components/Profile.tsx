@@ -34,7 +34,7 @@ const Profile = () => {
       <div className="flex justify-center">
         <div style={{ width: "100px", height: "100px" }}>
           <Image
-            src="/headshot.jpg"
+            src="/headshot.webp"
             alt="Oscar's Headshot"
             width={100}
             height={100}

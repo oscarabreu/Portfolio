@@ -96,12 +96,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({ featuredProject }) => {
               <FeaturedBlog
                 title="Machine Learning - Understanding ML and Data-Driven Soutions"
                 link="https://www.notion.so/Machine-Learning-Understanding-ML-and-Data-Driven-Soutions-97ae336cecdc472fa439acb51ce31322"
-                tags={["Machine Learn", "Python", "Pandas"]}
+                tags={["Machine Learning", "Python", "Pandas"]}
               />
               <FeaturedBlog
                 title="Machine Learning - Linear Regression in Depth"
                 link="https://amazing-sunstone-9aa.notion.site/Machine-Learning-Linear-Regression-in-Depth-4c82bea6f259438582dcea81136c3579?pvs=4"
-                tags={["Depp Learning", "Python"]}
+                tags={["Machine Learning", "Python"]}
               />
               <FeaturedBlog
                 title="Machine Learning - Optimizations and Gradient Descent"
@@ -112,7 +112,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ featuredProject }) => {
           <hr className="md:hidden"></hr>
           <ReadingList />
         </div>
-        <hr className="md:hidden"></hr>
+        <hr></hr>
       </div>
     </section>
   );

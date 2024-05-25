@@ -6,7 +6,7 @@ export const featuredProjects: Project[] = [
     category: "Graphics",
     description: `A multithreaded ray tracer in C++ with advanced material modeling, and efficient data-structures. Ongoing Project.`,
     technologies: ["C++", "CUDA", "NVRTC"],
-    imageSrc: "/nvidiart.png",
+    imageSrc: "/nvidiart.webp",
     githubLink: "https://github.com/oscarabreu/Multithreaded-Path-Tracer",
   },
   {
@@ -15,7 +15,7 @@ export const featuredProjects: Project[] = [
     description: `I implemented a wireframe renderer using the SDL2 library and TGA image format
     composed of a model loader class, geometric utilities, TGA image handling and Bresehnham's line drawing algorithm.`,
     technologies: ["C++", "SDL2", "OpenGL"],
-    imageSrc: "/african.png",
+    imageSrc: "/african.webp",
     githubLink: "https://github.com/oscarabreu/Wireframe-Renderer",
   },
   {
@@ -25,7 +25,7 @@ export const featuredProjects: Project[] = [
      for respiration rate using temperature deviations in a closed chamber. If a patient stops breathing for over 5 seconds, the 
      microcontroller will signal an alarm. `,
     technologies: ["C++", "STM32", "GPIO", "I2C", "RCC", "BME680"],
-    imageSrc: "/stm32.png",
+    imageSrc: "/stm32.webp",
     githubLink: "https://github.com/oscarabreu/Embedded-Mask---Respiration-Rate-Detection/tree/main",
   },
   {
@@ -34,7 +34,7 @@ export const featuredProjects: Project[] = [
     description: `This program is a simple utility to measure the read and write performance of a file. It uses block-based operations 
     to read or write data, allowing users to specify the size and count of blocks. My first real 'project', and a nice introduction to multithreading.`,
     technologies: ["C++"],
-    imageSrc: "/linux.png",
+    imageSrc: "/linux.webp",
     githubLink: "https://github.com/oscarabreu/File-IO-Performance-Tool",
   },
   {
@@ -43,7 +43,7 @@ export const featuredProjects: Project[] = [
     description: `A simplified Redis-like in-memory data structure store, capable of supporting basic data structures such as strings, hashes, lists, sets, and more,
     with a command parser to interpret and execute basic Redis commands and persistence to save and load data from disk to retain data across sessions.`,
     technologies: ["C++"],
-    imageSrc: "/redis2.png",
+    imageSrc: "/redis2.webp",
     githubLink: "https://github.com/oscarabreu/K-V-Store",
   },
   {
@@ -52,7 +52,7 @@ export const featuredProjects: Project[] = [
     description: `A simplified relational database project implemented in Go. This project encompasses fundamental aspects of a database system such as B-Trees, transaction handling, and query language parsing and execution.
     `,
     technologies: ["Go", "net/http"],
-    imageSrc: "/relational.png",
+    imageSrc: "/relational.webp",
     githubLink: "https://github.com/oscarabreu/Relational-Database",
   },
   {
@@ -60,7 +60,7 @@ export const featuredProjects: Project[] = [
     category: "Graphics",
     description: `A C++ SDL2 rendering of the famous Mandelbrot Set! I will likely add more sets like this to this repository!`,
     technologies: ["C++", "SDL2"],
-    imageSrc: "/mandelbrot.png",
+    imageSrc: "/mandelbrot.webp",
     githubLink: "https://github.com/oscarabreu/Mandelbrot-Viewer",
   },
   {
@@ -69,7 +69,7 @@ export const featuredProjects: Project[] = [
     description: `FabledFungi is a unique API hosted on AWS, designed to fetch random mushroom observations with a wealth of related metadata for each observation.
     `,
     technologies: ["Go", "VPC", "DyanmoDB", "Redis", "Lambdas", "S3", "Python", "Typescript"],
-    imageSrc: "/fungi.jpg",
+    imageSrc: "/fungi.webp",
     githubLink: "https://github.com/oscarabreu/FabledFungi?tab=readme-ov-file",
   },
   {
@@ -77,7 +77,7 @@ export const featuredProjects: Project[] = [
     category: "Machine Learning",
     description: ` Improving DRCT 4x super-resolution model stability through post-normalization, cosine attention, and log-spaced continuous position bias. `,
     technologies: ["Python", "Pytorch", "WandB", "ONNX", "CUDA", "MLFlow", "SageMaker", "Torchscript"],
-    imageSrc: "/DRCT4.png",
+    imageSrc: "/DRCT4.webp",
     githubLink: "https://github.com/oscarabreu/hpml_final",
   },
   
