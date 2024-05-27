@@ -104,8 +104,8 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ projects, searchQuery, active
                     className={`block md:inline-block rounded ${
                       tag === item.label
                         ? "bg-txtclr2 text-bgclr"
-                        : "bg-gray-800 text-gray-400"
-                    } border-gray-800 hover:bg-ytclr hover:text-grey-100 border px-3 py-1`}
+                        : "bg-gray-800 text-gray-400 hover:bg-ytclr hover:text-bgclr"
+                    } border-gray-800 border px-3 py-1`}
                   >
                     {item.label}
                   </button>

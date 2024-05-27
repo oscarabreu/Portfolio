@@ -49,8 +49,13 @@ const Profile = () => {
       </div>
       <div className="flex flex-col justify-center items-center space-y-4 py-6 text-sm text-center text-txtclr">
         <h1 className="text-txtclr2">Oscar Abreu</h1>
+        <h3 className="text-gray-400">
+          Software Engineer
+        </h3>
         <h3>
-          MSCE at NYU <br></br> May 2025
+          MS Computer Engineering <br></br>
+           New York University <br></br>
+          Dec 2024
         </h3>
         <div className="flex flex-row items-center justify-center space-x-3 text-txtclr">
           <a
@@ -92,8 +97,8 @@ const Profile = () => {
                 <a
                   className={`block md:inline-block rounded ${
                     isLastItem
-                      ? "text-bgclr bg-txtclr2 border-txtclr2 hover:bg-ytclr hover:text-bgclr"
-                      : "text-txtclr bg-bgclr border-txtclr hover:bg-ytclr hover:text-bgclr"
+                      ? "text-bgclr bg-txtclr2 border-txtclr2 hover:bg-ytclr hover:text-bgclr hover:border-ytclr"
+                      : "text-txtclr bg-bgclr border-txtclr hover:bg-ytclr hover:text-bgclr hover:border-ytclr"
                   }  border px-4 py-1`}
                 >
                   {item.label}

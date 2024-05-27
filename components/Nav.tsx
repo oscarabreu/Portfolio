@@ -35,7 +35,7 @@ const Nav = () => {
       <ul className="flex flex-row items-center text-base">
         <NavLink href="/">home</NavLink>
         <NavLink href="/projects">projects</NavLink>
-        <NavLink href="/blog">blog</NavLink>
+        {/* <NavLink href="/blog">blog</NavLink> */}
       </ul>
     </nav>
   );
