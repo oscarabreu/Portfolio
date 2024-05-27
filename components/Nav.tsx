@@ -15,11 +15,11 @@ const NavLink = ({ href, children }: NavLinkProps) => {
   const isActive = pathname === href;
 
   return (
-    <li className="px-4 pb-2 group hover:text-txtclr2">
+    <li className="px-4 pb-2 group">
       <Link href={href} passHref>
         <span
           className={`relative cursor-pointer py-0.5 transition-all ${
-            isActive ? "" : ""
+            isActive ? "text-txtclr2" : "hover:text-ytclr"
           }`}
         >
           {children}

@@ -12,7 +12,7 @@ import {
 } from "react-icons/ai";
 import { BsArrowUpRight } from "react-icons/bs";
 
-interface HeroSectionProps {
+interface HomeSectionProps {
   featuredProject: {
     title: string;
     description: string;
@@ -29,7 +29,7 @@ const skills = [
   "S3","VPC"
 ];
 
-const HeroSection: React.FC<HeroSectionProps> = ({ featuredProject }) => {
+const HomeSection: React.FC<HomeSectionProps> = ({ featuredProject }) => {
   return (
     <section id="home">
       <div className="flex flex-col max-w-4xl m-auto text-txtclr text-lg">
@@ -116,4 +116,4 @@ const HeroSection: React.FC<HeroSectionProps> = ({ featuredProject }) => {
   );
 };
 
-export default HeroSection;
+export default HomeSection;

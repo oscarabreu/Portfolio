@@ -1,6 +1,6 @@
 // app/page.tsx
 
-import HeroSection from '@/components/HeroSection';
+import HomeSection from '@/components/HomeSection';
 
 interface HomePageProps {
   featuredProject: {
@@ -28,7 +28,7 @@ export default async function HomePage() {
   return (
     <div className="flex flex-col min-h-screen font-body bg-bgclr">
       <main className="text-sm my-5 mx-5">
-        <HeroSection featuredProject={featuredProject} />
+        <HomeSection featuredProject={featuredProject} />
       </main>
     </div>
   );

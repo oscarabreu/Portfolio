@@ -36,10 +36,10 @@ const ProjectItem: React.FC<ProjectProps> = ({
       </div>
       <div className="max-md:absolute max-md:text-center flex flex-col md:ml-4 max-md:h-full justify-evenly md:w-1/2">
         <h3 className="text-base text-txtclr">{category}</h3>
-        <h3 className="text-2xl font-semibold text-ytclr">{title}</h3>
+        <a className="text-2xl text-txtclr2 font-semibold hover:underline" href={githubLink}>{title}</a>
         <ul className="text-sm flex gap-1.5 flex-wrap max-md:justify-center">
           {technologies.map((tech) => (
-            <li key={tech} className="border rounded px-1 py-1 bg-bgclr text-txtclr border-txtclr text-xs">
+            <li key={tech} className="border rounded px-1 py-1 bg-txtclr text-bgclr border-txtclr text-xs">
               {tech}
             </li>
           ))}
@@ -47,7 +47,7 @@ const ProjectItem: React.FC<ProjectProps> = ({
         <p className="text-sm text-gray-400">{description}</p>
         <div className="text-2xl flex gap-4 flex-row max-md:justify-center">
           <a
-            className="text-txtclr hover:text-txtclr"
+            className="hover:-translate-y-1 hover:text-txtclr2 transition-transform cursor-pointer text-txtclr2 dext--txtclr"
             href={githubLink}
             target="_blank"
             rel="noreferrer"

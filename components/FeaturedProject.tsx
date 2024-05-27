@@ -24,7 +24,7 @@ const FeaturedProject: React.FC<FeaturedProjectProps> = ({ title, description, i
           <p className="text-sm max-md:text-center text-txtclr">{description}</p>
           <div className="text-2xl flex gap-4 flex-row">
             <a
-              className="text-txtclr hover:text-txtclr"
+              className="hover:-translate-y-1 hover:text-txtclr2 transition-transform cursor-pointer text-txtclr dext--txtclr"
               href={githubLink}
               target="_blank"
               rel="noreferrer"

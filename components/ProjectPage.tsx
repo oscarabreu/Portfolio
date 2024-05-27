@@ -41,7 +41,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ projects, searchQuery, active
       return matchesSearchQuery && matchesTag;
     });
     setFilteredProjects(filtered);
-    setCurrentPage(1);  // Reset to first page on filter change
+    setCurrentPage(1); 
   };
 
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -69,7 +69,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ projects, searchQuery, active
         <div className="flex justify-center md:justify-start py-4">
           <Nav />
         </div>
-        <h1 className="text-4xl py-5 font-bold max-md:text-center">Projects</h1>
+        <h1 className="text-4xl py-5 font-bold max-md:text-center text-txtclr2">Projects</h1>
         <div className="flex flex-col md:flex-row justify-between">
           <div className="flex flex-col space-y-2 md:w-2/5">
             <h4 className="text-sm text-gray-500 max-md:text-center">By name</h4>

@@ -53,9 +53,8 @@ module.exports = {
       colors: {
         bgclr: "#030617",
         txtclr: "#bbbbba",
-        txtclr2: "#ffffff",
-        hclr: "#5858e6",
-        ytclr: "ffffff"
+        txtclr2: "#87CEEB",
+        ytclr: "#FFFFFF"
       },
       maxWidth: {
         100: "100rem",
