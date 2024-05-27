@@ -1,6 +1,7 @@
 export interface Project {
     title: string;
     category: string;
+    tag: string;
     description: string;
     technologies: string[];
     imageSrc: string;

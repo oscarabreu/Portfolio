@@ -8,43 +8,48 @@ import ProjectItem from '@/components/ProjectItem';
 interface ProjectPageProps {
   projects: Project[];
   searchQuery: string;
-  activeCategory: string;
+  activeTag: string;
 }
 
 const PROF_ITEMS = [
-  { label: "Machine Learning" },
+  { label: "All" },
+  { label: "ML/AI" },
   { label: "Graphics" },
   { label: "Systems" },
   { label: "Web" },
-  { label: "All" },
 ];
 
-const ITEMS_PER_PAGE = 4;
+const ITEMS_PER_PAGE = 5;
 
-const ProjectPage: React.FC<ProjectPageProps> = ({ projects, searchQuery, activeCategory }) => {
-  const [filteredProjects, setFilteredProjects] = useState<Project[]>(projects);
+const ProjectPage: React.FC<ProjectPageProps> = ({ projects, searchQuery, activeTag }) => {
+  const [filteredProjects, setFilteredProjects] = useState<Project[]>([]);
   const [query, setQuery] = useState<string>(searchQuery);
-  const [category, setCategory] = useState<string>(activeCategory);
+  const [tag, setTag] = useState<string>(activeTag);
   const [currentPage, setCurrentPage] = useState<number>(1);
 
   useEffect(() => {
+    filterProjects(projects, query, tag);
+  }, [projects, query, tag]);
+
+  const filterProjects = (projects: Project[], query: string, tag: string) => {
     const filtered = projects.filter((project) => {
       const matchesSearchQuery =
         project.title.toLowerCase().includes(query.toLowerCase()) ||
-        project.category.toLowerCase().includes(query.toLowerCase());
-      const matchesCategory = category === "All" || project.category === category;
-      return matchesSearchQuery && matchesCategory;
+        project.category.toLowerCase().includes(query.toLowerCase()) ||
+        project.tag.toLowerCase().includes(query.toLowerCase());
+      const matchesTag = tag === "All" || project.tag === tag;
+      return matchesSearchQuery && matchesTag;
     });
     setFilteredProjects(filtered);
     setCurrentPage(1);  // Reset to first page on filter change
-  }, [projects, query, category]);
+  };
 
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setQuery(e.target.value);
   };
 
-  const handleCategoryClick = (newCategory: string) => {
-    setCategory(newCategory);
+  const handleTagClick = (newTag: string) => {
+    setTag(newTag);
   };
 
   const handleNextPage = () => {
@@ -95,9 +100,9 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ projects, searchQuery, active
                 {PROF_ITEMS.map((item, idx) => (
                   <button
                     key={idx}
-                    onClick={() => handleCategoryClick(item.label)}
+                    onClick={() => handleTagClick(item.label)}
                     className={`block md:inline-block rounded ${
-                      category === item.label
+                      tag === item.label
                         ? "bg-txtclr2 text-bgclr"
                         : "bg-gray-800 text-gray-400"
                     } border-gray-800 hover:bg-ytclr hover:text-grey-100 border px-3 py-1`}
@@ -117,6 +122,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ projects, searchQuery, active
                 key={idx}
                 title={project.title}
                 category={project.category}
+                tag={project.tag}
                 description={project.description}
                 technologies={project.technologies}
                 imageSrc={project.imageSrc}
@@ -131,16 +137,16 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ projects, searchQuery, active
           {currentPage > 1 && (
             <button
               onClick={handlePreviousPage}
-              className={`block md:inline-block rounded bg-bgclr text-txtclr border-txtclr hover:border-txtclr hover:bg-txtclr hover:text-bgclr border px-3 py-1`}
+              className="block md:inline-block rounded bg-bgclr text-txtclr border-txtclr hover:border-txtclr hover:bg-txtclr2 hover:text-bgclr border px-3 py-1 focus:outline-none focus:ring-2 focus:ring-primary-500 active:bg-txtclr2 active:text-bgclr"
             >
               Previous Page
             </button>
           )}
           <div className="flex-grow"></div>
-          {currentProjects.length === ITEMS_PER_PAGE && (
+          {startIndex + currentProjects.length < filteredProjects.length && (
             <button
               onClick={handleNextPage}
-              className={`block md:inline-block rounded bg-bgclr text-txtclr border-txtclr hover:border-txtclr hover:bg-txtclr hover:text-bgclr border px-3 py-1`}
+              className="block md:inline-block rounded bg-bgclr text-txtclr border-txtclr hover:border-txtclr hover:bg-txtclr2 hover:text-bgclr border px-3 py-1 focus:outline-none focus:ring-2 focus:ring-primary-500 active:bg-txtclr2 active:text-bgclr"
             >
               Next Page
             </button>

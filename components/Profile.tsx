@@ -38,7 +38,6 @@ const Profile = () => {
             alt="Oscar's Headshot"
             width={100}
             height={100}
-            priority
             style={{
               width: "100px",
               height: "100px",
@@ -49,7 +48,7 @@ const Profile = () => {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center space-y-4 py-6 text-sm text-center text-txtclr">
-        <h1 className="text-txtclr">Oscar Abreu</h1>
+        <h1 className="text-txtclr2">Oscar Abreu</h1>
         <h3>
           MSCE at NYU <br></br> May 2025
         </h3>
@@ -60,7 +59,7 @@ const Profile = () => {
             target="_blank"
           >
             <AiOutlineGithub
-              className="hover:-translate-y-1 hover:text-ytclr transition-transform cursor-pointer text-txtclr dext--txtclr"
+              className="hover:-translate-y-1 hover:text-txtclr2 transition-transform cursor-pointer text-txtclr dext--txtclr"
               size={30}
             />
           </a>
@@ -70,7 +69,7 @@ const Profile = () => {
             target="_blank"
           >
             <AiOutlineLinkedin
-              className="hover:-translate-y-1 hover:text-ytclr transition-transform cursor-pointer text-txtclr dext--txtclr"
+              className="hover:-translate-y-1 hover:text-txtclr2 transition-transform cursor-pointer text-txtclr dext--txtclr"
               size={30}
             />
           </a>
@@ -80,7 +79,7 @@ const Profile = () => {
             target="_blank"
           >
             <AiOutlineYoutube
-              className="hover:-translate-y-1 hover:text-ytclr transition-transform cursor-pointer text-txtclr dext--txtclr"
+              className="hover:-translate-y-1 hover:text-txtclr2 transition-transform cursor-pointer text-txtclr dext--txtclr"
               size={30}
             />
           </a>
@@ -93,8 +92,8 @@ const Profile = () => {
                 <a
                   className={`block md:inline-block rounded ${
                     isLastItem
-                      ? "bg-txtclr text-gray-800 border-gray-800"
-                      : "text-txtclr bg-bgclr border-txtclr "
+                      ? "bg-txtclr text-gray-800 border-gray-800 hover:bg-txtclr2 hover:text-bgclr"
+                      : "text-txtclr bg-bgclr border-txtclr hover:bg-txtclr2 hover:text-bgclr"
                   }  border px-4 py-1`}
                 >
                   {item.label}

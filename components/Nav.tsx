@@ -1,6 +1,6 @@
 /** @format */
-
-import { useRouter } from "next/router";
+"use client"
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 interface NavLinkProps {
@@ -8,20 +8,31 @@ interface NavLinkProps {
   children: React.ReactNode;
 }
 
-const NavLink = ({ href, children }: NavLinkProps) => (
-  <li className="border-transparent hover:text-txtclr2 px-2 rounded group">
-    <Link href={href} passHref>
-      <span className="cursor-pointer focus:outline-none py-0.5 border-b-2 border-transparent transition-all align-middle px-2">
-        {children}
-      </span>
-    </Link>
-  </li>
-);
+const NavLink = ({ href, children }: NavLinkProps) => {
+  const pathname = usePathname(); // Use usePathname from next/navigation
+
+  // Determine if the current route matches the NavLink href
+  const isActive = pathname === href;
+
+  return (
+    <li className="px-4 pb-2 group hover:text-txtclr2">
+      <Link href={href} passHref>
+        <span
+          className={`relative cursor-pointer py-0.5 transition-all ${
+            isActive ? "" : ""
+          }`}
+        >
+          {children}
+        </span>
+      </Link>
+    </li>
+  );
+};
 
 const Nav = () => {
   return (
     <nav className="flex text-xl">
-      <ul className="flex flex-row items-center text-txtclr text-base">
+      <ul className="flex flex-row items-center text-base">
         <NavLink href="/">home</NavLink>
         <NavLink href="/projects">projects</NavLink>
         <NavLink href="/blog">blog</NavLink>
@@ -29,8 +40,5 @@ const Nav = () => {
     </nav>
   );
 };
-export default Nav;
 
-/*
-            <button className="py-1 border-b-2 border-transparent">
-*/
+export default Nav;

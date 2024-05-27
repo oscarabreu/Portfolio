@@ -1,3 +1,5 @@
+// app/page.tsx
+
 import HeroSection from '@/components/HeroSection';
 
 interface HomePageProps {

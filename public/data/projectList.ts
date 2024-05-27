@@ -4,6 +4,7 @@ export const featuredProjects: Project[] = [
   {
     title: "Multithreaded Ray Tracer",
     category: "Graphics",
+    tag: "Graphics",
     description: `A multithreaded ray tracer in C++ with advanced material modeling, and efficient data-structures. Ongoing Project.`,
     technologies: ["C++", "CUDA", "NVRTC"],
     imageSrc: "/nvidiart.webp",
@@ -12,6 +13,7 @@ export const featuredProjects: Project[] = [
   {
     title: "Wireframe Renderer",
     category: "Graphics",
+    tag: "Graphics",
     description: `I implemented a wireframe renderer using the SDL2 library and TGA image format
     composed of a model loader class, geometric utilities, TGA image handling and Bresehnham's line drawing algorithm.`,
     technologies: ["C++", "SDL2", "OpenGL"],
@@ -20,7 +22,8 @@ export const featuredProjects: Project[] = [
   },
   {
     title: "Respiration Rate Detection",
-    category: "Systems",
+    category: "Embedded Systems",
+    tag: "Systems",
     description: `This project uses an STM324F and a Bosch BME680 680 sensor embedded within a clinical oxygen mask that will poll
      for respiration rate using temperature deviations in a closed chamber. If a patient stops breathing for over 5 seconds, the 
      microcontroller will signal an alarm. `,
@@ -30,7 +33,8 @@ export const featuredProjects: Project[] = [
   },
   {
     title: "File I/O Benchmark Tool",
-    category: "Systems",
+    category: "Operating Systems",
+    tag: "Systems",
     description: `This program is a simple utility to measure the read and write performance of a file. It uses block-based operations 
     to read or write data, allowing users to specify the size and count of blocks. My first real 'project', and a nice introduction to multithreading.`,
     technologies: ["C++"],
@@ -39,7 +43,8 @@ export const featuredProjects: Project[] = [
   },
   {
     title: "Redis - K/V Database",
-    category: "Systems",
+    category: "Databases",
+    tag: "Systems",
     description: `A simplified Redis-like in-memory data structure store, capable of supporting basic data structures such as strings, hashes, lists, sets, and more,
     with a command parser to interpret and execute basic Redis commands and persistence to save and load data from disk to retain data across sessions.`,
     technologies: ["C++"],
@@ -48,7 +53,8 @@ export const featuredProjects: Project[] = [
   },
   {
     title: "Relational Database",
-    category: "Systems",
+    category: "Databases",
+    tag: "Systems",
     description: `A simplified relational database project implemented in Go. This project encompasses fundamental aspects of a database system such as B-Trees, transaction handling, and query language parsing and execution.
     `,
     technologies: ["Go", "net/http"],
@@ -58,6 +64,7 @@ export const featuredProjects: Project[] = [
   {
     title: "Mandelbrot Set",
     category: "Graphics",
+    tag: "Graphics",
     description: `A C++ SDL2 rendering of the famous Mandelbrot Set! I will likely add more sets like this to this repository!`,
     technologies: ["C++", "SDL2"],
     imageSrc: "/mandelbrot.webp",
@@ -65,7 +72,8 @@ export const featuredProjects: Project[] = [
   },
   {
     title: "FabledFungi API",
-    category: "Web",
+    category: "API Development",
+    tag: "Web",
     description: `FabledFungi is a unique API hosted on AWS, designed to fetch random mushroom observations with a wealth of related metadata for each observation.
     `,
     technologies: ["Go", "VPC", "DyanmoDB", "Redis", "Lambdas", "S3", "Python", "Typescript"],
@@ -74,11 +82,23 @@ export const featuredProjects: Project[] = [
   },
   {
     title: "Upscaling the Dense Residual Connection Transformer",
-    category: "Machine Learning",
+    category: "Deep Learning",
+    tag: "ML/AI",
     description: ` Improving DRCT 4x super-resolution model stability through post-normalization, cosine attention, and log-spaced continuous position bias. `,
     technologies: ["Python", "Pytorch", "WandB", "ONNX", "CUDA", "MLFlow", "SageMaker", "Torchscript"],
     imageSrc: "/DRCT4.webp",
     githubLink: "https://github.com/oscarabreu/hpml_final",
   },
+  {
+    title: "Pneumonia Detection with the Shifted Window Transformer",
+    category: "Deep Learning",
+    tag: "ML/AI",
+    description: ` Implemented the SwinV2-T transformer model on the Pneumonia dataset, leveraging its
+    window-based window-based multi-head self-attention mechanism for the classification of Pneumonia. `,
+    technologies: ["Python", "Pytorch", "Torchscript"],
+    imageSrc: "/pneumonia.webp",
+    githubLink: "https://github.com/oscarabreu/Pneumonia-SwinV2T",
+  },
+
   
 ];

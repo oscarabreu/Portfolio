@@ -11,12 +11,12 @@ const fetchProjects = async (): Promise<Project[]> => {
 export default async function Projects() {
   const projects: Project[] = await fetchProjects();
   const searchQuery = '';
-  const activeCategory = 'All';
+  const activeTag = 'All';
 
   return (
     <div className="flex flex-col min-h-screen font-body bg-bgclr">
       <main className="text-sm my-5 mx-5">
-        <ProjectPage projects={projects} searchQuery={searchQuery} activeCategory={activeCategory} />
+        <ProjectPage projects={projects} searchQuery={searchQuery} activeTag={activeTag} />
       </main>
     </div>
   );

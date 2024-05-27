@@ -5,12 +5,12 @@ import { Project } from 'types';
 interface ProjectSectionProps {
   projects: Project[];
   searchQuery: string;
-  activeCategory: string;
+  activeTag: string;
 }
 
-const ProjectSection: React.FC<ProjectSectionProps> = ({ projects, searchQuery, activeCategory }) => {
+const ProjectSection: React.FC<ProjectSectionProps> = ({ projects, searchQuery, activeTag }) => {
   return (
-    <ProjectPage projects={projects} searchQuery={searchQuery} activeCategory={activeCategory} />
+    <ProjectPage projects={projects} searchQuery={searchQuery} activeTag={activeTag} />
   );
 };
 

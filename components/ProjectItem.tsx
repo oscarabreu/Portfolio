@@ -2,9 +2,11 @@ import React from "react";
 import Image from "next/image";
 import { AiOutlineGithub } from "react-icons/ai";
 
+
 interface ProjectProps {
   title: string;
   category: string;
+  tag: string;
   description: string;
   technologies: string[];
   imageSrc: string;
@@ -14,6 +16,7 @@ interface ProjectProps {
 const ProjectItem: React.FC<ProjectProps> = ({
   title,
   category,
+  tag,
   description,
   technologies,
   imageSrc,

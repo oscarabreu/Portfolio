@@ -8,7 +8,7 @@ import Layout from "@/components/Layout";
 const BlogSection = () => {
   return (
     <Layout>
-      <h1 className="text-4xl py-5 font-bold max-md:text-center">Blogs</h1>
+      <h1 className="text-4xl py-5 font-bold max-md:text-center text-txtclr2">Blogs</h1>
       <div className="flex flex-col md:flex-row pb-0 justify-between">
         <div className="flex flex-col space-y-2 md:w-2/5">
           <h4 className="text-sm text-gray-500 max-md:text-center">By name</h4>

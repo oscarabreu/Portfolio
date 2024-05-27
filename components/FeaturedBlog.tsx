@@ -15,7 +15,7 @@ const FeaturedBlog: React.FC<BlogProps> = ({ title, link, tags }) => {
       <br />
       <div className="flex flex-row flex-wrap justify-center pt-4">
         {tags.map((tag, idx) => (
-          <p key={idx} className="text-txtclr border border-txtclr px-2 py-1 mx-1 my-1 text-xs rounded">
+          <p key={idx} className=" text-xs border rounded px-3 py-1 mx-1 my-1 bg-bgclr text-txtclr border-txtclr">
             {tag}
           </p>
         ))}

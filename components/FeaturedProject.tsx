@@ -1,3 +1,5 @@
+// components/FeaturedProject.tsx
+
 import React from 'react';
 import Image from 'next/image';
 import { AiOutlineGithub } from 'react-icons/ai';
@@ -18,7 +20,7 @@ const FeaturedProject: React.FC<FeaturedProjectProps> = ({ title, description, i
           className="flex flex-col justify-around md:items-start max-md:absolute max-md:items-center max-md:justify-around max-md:space-y-4 
                       top-0 left-0 right-0 bottom-0 z-20 lg:w-1/2 text-sm"
         >
-          <h3 className="text-2xl font-bold text-txtclr">{title}</h3>
+          <h3 className="text-2xl font-bold text-txtclr2">{title}</h3>
           <p className="text-sm max-md:text-center text-txtclr">{description}</p>
           <div className="text-2xl flex gap-4 flex-row">
             <a
@@ -32,7 +34,7 @@ const FeaturedProject: React.FC<FeaturedProjectProps> = ({ title, description, i
           </div>
           <ul className="text-xs flex flex-wrap max-md:justify-center">
             {tags.map((tag, idx) => (
-              <li key={idx} className="border rounded px-3 py-1 mx-1 my-1 bg-bgclr text-txtclr border-txtclr">
+              <li key={idx} className="border rounded px-3 py-1 mx-1 my-1 bg-txtclr text-bgclr border-txtclr">
                 {tag}
               </li>
             ))}

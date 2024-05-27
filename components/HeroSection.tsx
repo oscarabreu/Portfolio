@@ -42,14 +42,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({ featuredProject }) => {
           </div>
           <div className="flex flex-col md:w-2/3 space-y-4 text-base">
             <h2 className="text-3xl font-bold flex max-md:justify-center">
-              Hey, I am&nbsp;<span className="text-txtclr">Oscar</span>
+              Hey, I&apos;m&nbsp;<span className="text-txtclr2">Oscar</span>
             </h2>
             <p className="max-md:justify-center text-base">
-              Welcome to my page! I first embarked on my academic path with a BS
-              in Biochemistry at Binghamton University, only to find my passion
-              within Software Engineering. It all started with a hobby in
+              Welcome to my page! My passion for computer science all started with a hobby in
               Arduino electronics, which blossomed into a deep-seated passion
-              for computer science. This led me to the <span className="text-ytclr">New York University
+              for computer science - leading me to the <span className="text-ytclr">New York University
               Bridge to Tandon</span> program, where I gained proficiency in the
               fundamentals and successfully earned my place in the <span className="text-txtclr">Master of
               Science in Computer Engineering program.</span>
@@ -74,7 +72,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ featuredProject }) => {
           </div>
           <div className="w-7/8 flex flex-wrap flex-row justify-center text-xs">
             {skills.map((skill, idx) => (
-              <p key={idx} className="bg-bgclr text-txtclr border border-txtclr px-3 py-1 mx-1 my-1 rounded">
+              <p key={idx} className="bborder rounded px-3 py-1 mx-1 my-1 bg-txtclr text-bgclr border-txtclr">
                 {skill}
               </p>
             ))}
