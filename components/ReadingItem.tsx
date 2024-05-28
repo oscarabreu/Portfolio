@@ -26,7 +26,7 @@ const ReadingItem: React.FC<ReadingItemProps> = ({
         rel="noreferrer"
       >
       </a>
-      <div className="flex justify-center items-center w-full md:w-1/3">
+      <div className="flex justify-center items-center  w-1/3">
         <Image
           src={imageUrl}
           alt={bookName}
@@ -36,12 +36,12 @@ const ReadingItem: React.FC<ReadingItemProps> = ({
           className="justify-center items-center"
         />
       </div>
-      <div className="flex flex-col items-center justify-between max-md:space-y-2 text-center text-txtclr w-full md:w-2/3 px-2 ">
+      <div className="flex flex-col justify-between max-md:space-y-2 text-txtclr w-2/3 px-2 max-md:px-6 text-left  md:text-center">
         <h4 className='text-txtclr2'>{bookName}</h4>
         <h4 className="text-sm">{bookAuthor}</h4>
         <h6 className="text-xs text-gray-500">{description}</h6>
         <h4>
-          <a href={notesLink} className="block w-full md:inline-block rounded text-txtclr bg-bgclr border-txtclr hover:bg-ytclr hover:text-bgclr hover:border-ytclr border px-4 py-1">
+          <a href={notesLink} className="inline-block rounded text-txtclr bg-bgclr border-txtclr hover:bg-ytclr hover:text-bgclr hover:border-ytclr border px-4 py-1">
             Notes Here
           </a>
         </h4>

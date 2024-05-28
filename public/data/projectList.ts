@@ -11,6 +11,16 @@ export const featuredProjects: Project[] = [
     githubLink: "https://github.com/oscarabreu/Multithreaded-Path-Tracer",
   },
   {
+    title: "FabledFungi API",
+    category: "API Development",
+    tag: "Web",
+    description: `FabledFungi is a unique API hosted on AWS, designed to fetch random mushroom observations with a wealth of related metadata for each observation.
+    `,
+    technologies: ["Go", "DyanmoDB", "Redis", "S3"],
+    imageSrc: "/fungi.webp",
+    githubLink: "https://github.com/oscarabreu/FabledFungi?tab=readme-ov-file",
+  },
+  {
     title: "Wireframe Renderer",
     category: "Graphics",
     tag: "Graphics",
@@ -69,16 +79,6 @@ export const featuredProjects: Project[] = [
     technologies: ["C++", "SDL2"],
     imageSrc: "/mandelbrot.webp",
     githubLink: "https://github.com/oscarabreu/Mandelbrot-Viewer",
-  },
-  {
-    title: "FabledFungi API",
-    category: "API Development",
-    tag: "Web",
-    description: `FabledFungi is a unique API hosted on AWS, designed to fetch random mushroom observations with a wealth of related metadata for each observation.
-    `,
-    technologies: ["Go", "VPC", "DyanmoDB", "Redis", "Lambdas", "S3", "Python", "Typescript"],
-    imageSrc: "/fungi.webp",
-    githubLink: "https://github.com/oscarabreu/FabledFungi?tab=readme-ov-file",
   },
   {
     title: "Upscaling the Dense Residual Connection Transformer",

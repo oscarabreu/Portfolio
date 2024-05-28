@@ -43,11 +43,11 @@ const BlogSection = () => {
             </svg>
           </div>
         </div>
-        <div className="flex flex-col space-y-2 pb-4 md:w-3/5">
+        <div className="flex flex-col md:w-3/5">
         </div>
       </div>
       <hr />
-      <div className="flex flex-col py-6 justify-evenly">
+      <div className="flex flex-col justify-evenly">
         {blogList.map((blog, index) => (
           <Blog
             key={index}

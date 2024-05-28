@@ -55,7 +55,7 @@ const Profile = () => {
         <h3>
           MS Computer Engineering <br></br>
            New York University <br></br>
-          Dec 2024
+          May 2025
         </h3>
         <div className="flex flex-row items-center justify-center space-x-3 text-txtclr">
           <a

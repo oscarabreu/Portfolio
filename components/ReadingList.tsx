@@ -3,8 +3,7 @@ import ReadingItem from './ReadingItem';
 
 const ReadingList: React.FC = () => {
   return (
-    <div className="pt-4 pb-8 px-6 flex flex-col text-center justify-between md:w-1/2 md:border-l space-y-6">
-      <h4 className='text-xl'>Reading List:</h4>
+    <div className="py-6 px-6 flex flex-col text-center justify-evenly md:w-1/2 md:border-l space-y-6">
       <ReadingItem
         imageUrl="/textbook/ddia.webp"
         description="A must-read for learning best-practices and modern distributed application design principles."
