@@ -4,20 +4,29 @@ import Profile from '@/components/Profile';
 import ReadingList from '@/components/ReadingList';
 import FeaturedBlog from './FeaturedBlog';
 import FeaturedProject from './FeaturedProject';
-import { featuredProjects } from '@/public/data/projectList'; // Import the featured projects
+import { workList } from 'public/data/workList';
+import { educationList } from '@/public/data/educationList';
+import Education from './EducationSection';
 import WorkExperience from './WorkExperience';
-import { workList } from 'public/data/workList'
-import { educationList } from '@/public/data/educationList'; // Import the education list
-import Education from './EducationSection'; // Import Education component
 
 const skills = [
   "C++", "CUDA", "SDL2", "Go", "Python", "Numpy", "Pandas", "TensorFlow",
   "PyTorch", "Typescript", "Next.js", "AWS", "gRPC", "Docker", "Kubernetes", 
-  "PostgreSQL", "MongoDB", "DynamoDB", "Redis", "S3"]
+  "PostgreSQL", "MongoDB", "DynamoDB", "Redis", "S3"
+];
 
-const HomeSection: React.FC = () => {
-  // Get the first two featured projects from the list
-  const [firstProject, secondProject] = featuredProjects.slice(0, 2);
+interface HomeSectionProps {
+  featuredProjects: {
+    title: string;
+    description: string;
+    imageUrl: string;
+    githubLink: string;
+    tags: string[];
+  }[];
+}
+
+const HomeSection: React.FC<HomeSectionProps> = ({ featuredProjects }) => {
+  const [firstProject, secondProject] = featuredProjects;
 
   return (
     <section id="home">
@@ -100,21 +109,20 @@ const HomeSection: React.FC = () => {
             Projects
         </div>
         <hr />
-        {/* Div for the entire Featured Project container */}
         <div className="flex flex-col justify-center items-center md:flex-row py-4 space-x-4">
           <FeaturedProject
             title={firstProject.title}
             description={firstProject.description}
-            imageUrl={firstProject.imageSrc}
+            imageUrl={firstProject.imageUrl}
             githubLink={firstProject.githubLink}
-            tags={firstProject.technologies}
+            tags={firstProject.tags}
           />
           <FeaturedProject
             title={secondProject.title}
             description={secondProject.description}
-            imageUrl={secondProject.imageSrc}
+            imageUrl={secondProject.imageUrl}
             githubLink={secondProject.githubLink}
-            tags={secondProject.technologies}
+            tags={secondProject.tags}
           />
         </div>
         <div className='flex flex-row'>
