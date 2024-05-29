@@ -13,5 +13,17 @@ export const workList = [
       'Contributing to the development of a novel benchmark, dataset, and evaluation metric for the SoccerNet Game State Reconstruction task.'
     ],
     technologies: ['Python', 'Pytorch', 'Tensorflow', "ONNX", "Transformer"]
+  },
+  {
+    companyLogo: '/Visentra.webp',
+    title: 'Software Engineer (Founder)',
+    company: 'Visentra',
+    date: 'May 2024 - Present',
+    location: 'New York, NY',
+    description: [
+      "Developed a scalable image-processing service utilizing ECS, on-demand GPUs via RunPod/Modal/Lambdas, and Kubernetes (KubeFlow) for AI Image Conversion.",
+      'Implemented efficient workflows and managed deployment pipelines to ensure high availability and performance of the image-processing service in production environments, integrating cutting-edge ML technologies and cloud infrastructure.'
+    ],
+    technologies: ['Python', 'Pytorch', 'Tensorflow', "ONNX", "Transformer"]
   }
 ];

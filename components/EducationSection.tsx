@@ -1,5 +1,3 @@
-// components/Education.tsx
-
 import React from 'react';
 import Image from 'next/image';
 
@@ -8,28 +6,26 @@ interface EducationProps {
   degree: string;
   institution: string;
   date: string;
-  awards: string[];
   activities: string;
 }
 
-const Education: React.FC<EducationProps> = ({ institutionLogo, degree, institution, date, activities, awards}) => {
+const Education: React.FC<EducationProps> = ({ institutionLogo, degree, institution, date, activities}) => {
   return (
-    <div className="flex flex-col md:flex-row h-auto items-center justify-center">
-      <div className="relative w-full py-4 bg-bgclr rounded-lg shadow-lg">
-        <div className="flex items-center mb-4">
-          <div className="w-16 h-16 mr-4 relative">
-            <Image src={institutionLogo} alt={`${institution} logo`} layout="fill" objectFit="contain" />
-          </div>
-          <div>
-            <h3 className="text-xl font-bold text-txtclr2">{degree}</h3>
-            <p className="text-md text-txtclr">{institution}</p>
-            <p className="text-sm text-gray-400">{date}</p>
-            <p className='text-sm text-gray-400'>{activities}</p>
-            <p className='text-sm text-gray-400'>{awards}</p>
-          </div>
-        </div>
-        <div className="text-sm text-txtclr">
-        </div>
+    <div className="flex flex-row items-start justify-start w-full p-4 bg-bgclr rounded-lg shadow-lg">
+      <div className="w-16 h-16 flex-shrink-0">
+        <Image 
+          src={institutionLogo} 
+          alt={`${institution} logo`} 
+          width={60} 
+          height={60} 
+          className="object-contain"
+        />
+      </div>
+      <div className='text-left ml-3 justify-evenly space-y-1'>
+        <h3 className="text-xl font-bold text-txtclr2">{institution}</h3>
+        <p className="text-base text-ytclr">{degree}</p>
+        <p className="text-sm text-txtclr">{date}</p>
+        <p className="text-sm text-gray-400">{activities}</p>
       </div>
     </div>
   );

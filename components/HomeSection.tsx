@@ -59,11 +59,11 @@ const HomeSection: React.FC<HomeSectionProps> = ({ featuredProjects }) => {
             </p>
           </div>
         </div>
-        <div className="text-left text-txtclr text-xl">
+        <div className="text-left text-txtclr text-xl w-full">
           Education
         </div>
         <hr />
-        <div className='flex flex-col md:flex-row'>
+        <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-4 py-6 justify-start">
         {educationList.map((education, idx) => (
           <Education
             key={idx}
@@ -71,15 +71,15 @@ const HomeSection: React.FC<HomeSectionProps> = ({ featuredProjects }) => {
             degree={education.degree}
             institution={education.institution}
             date={education.date}
-            awards={education.awards}
             activities={education.activities}
           />
         ))}
         </div>
-        <div className="text-left text-txtclr text-xl">
+        <div className="text-left text-txtclr text-xl w-full">
           Experience
         </div>
         <hr />
+        <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 justify-center'>
         {workList.map((experience, idx) => (
           <WorkExperience
             key={idx}
@@ -92,6 +92,7 @@ const HomeSection: React.FC<HomeSectionProps> = ({ featuredProjects }) => {
             technologies={experience.technologies}
           />
         ))}
+        </div>
         <div className="text-left text-txtclr text-xl">
             Skills
           </div>
