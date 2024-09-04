@@ -9,10 +9,8 @@ interface NavLinkProps {
 }
 
 const NavLink = ({ href, children }: NavLinkProps) => {
-  const pathname = usePathname(); // Use usePathname from next/navigation
-
-  // Determine if the current route matches the NavLink href
-  const isActive = pathname === href;
+  const pathname = usePathname();
+  const isActive = pathname === href || pathname?.startsWith(`${href}/`);
 
   return (
     <li className="px-4 pb-2 group">
@@ -35,7 +33,7 @@ const Nav = () => {
       <ul className="flex flex-row items-center text-base">
         <NavLink href="/">home</NavLink>
         <NavLink href="/projects">projects</NavLink>
-        {/* <NavLink href="/blog">blog</NavLink> */}
+        <NavLink href="/blogs">blogs</NavLink>
       </ul>
     </nav>
   );

@@ -4,7 +4,7 @@ import Profile from '@/components/Profile';
 import ReadingList from '@/components/ReadingList';
 import FeaturedBlog from './FeaturedBlog';
 import FeaturedProject from './FeaturedProject';
-import { workList } from 'public/data/workList';
+// import { workList } from 'public/data/workList';
 import { educationList } from '@/public/data/educationList';
 import Education from './EducationSection';
 import WorkExperience from './WorkExperience';
@@ -30,7 +30,7 @@ const HomeSection: React.FC<HomeSectionProps> = ({ featuredProjects }) => {
 
   return (
     <section id="home">
-      <div className="flex flex-col max-w-4xl m-auto text-txtclr text-lg">
+      <div className="flex flex-col max-w-3xl m-auto text-txtclr text-lg">
         <div className="flex justify-center md:justify-start py-4">
           <Nav />
         </div>
@@ -75,7 +75,7 @@ const HomeSection: React.FC<HomeSectionProps> = ({ featuredProjects }) => {
           />
         ))}
         </div>
-        <div className="text-left text-txtclr text-xl w-full">
+        {/* <div className="text-left text-txtclr text-xl w-full">
           Experience
         </div>
         <hr />
@@ -92,7 +92,7 @@ const HomeSection: React.FC<HomeSectionProps> = ({ featuredProjects }) => {
             technologies={experience.technologies}
           />
         ))}
-        </div>
+        </div> */}
         <div className="text-left text-txtclr text-xl">
             Skills
           </div>

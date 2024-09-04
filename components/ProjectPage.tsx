@@ -65,7 +65,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ projects, searchQuery, active
 
   return (
     <section id="home">
-      <div className="flex flex-col max-w-4xl m-auto text-txtclr text-lg">
+      <div className="flex flex-col max-w-3xl m-auto text-txtclr text-lg">
         <div className="flex justify-center md:justify-start py-4">
           <Nav />
         </div>

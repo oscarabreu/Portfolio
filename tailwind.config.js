@@ -9,7 +9,6 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
-
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
@@ -99,6 +98,7 @@ module.exports = {
       },
       fontSize: {
         "base-lg": "1.0rem", // or whatever name you prefer
+        "bs": ".925rem"
       },
       screens: {
         "max-sm": { max: "639px" },

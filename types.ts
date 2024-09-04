@@ -16,3 +16,9 @@ export interface Project {
     date: string;
     slug: string;
   }
+
+  export type Toc = {
+    value: string;
+    depth: number;
+    url: string;
+  }[];

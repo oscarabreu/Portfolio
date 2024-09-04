@@ -16,7 +16,7 @@ interface WorkExperienceProps {
 const WorkExperience: React.FC<WorkExperienceProps> = ({ companyLogo, title, company, date, location, description, technologies }) => {
   return (
     <div className="flex h-auto  py-4">
-      <div className="relative max-w-4xl p-4 bg-bgclr rounded-lg shadow-lg">
+      <div className="relative max-w-4xl p-4 bg-bgclr rounded-lg shadow-lg s">
         <div className="flex items-center mb-4">
           <div className="w-16 h-16 mr-4 relative">
             <Image

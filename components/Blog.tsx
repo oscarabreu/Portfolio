@@ -13,10 +13,8 @@ interface BlogProps {
 const Blog: React.FC<BlogProps> = ({ title, category, description, technologies, date, slug }) => {
   return (
     <div className="py-4 space-y-2">
-      <Link href={`/posts/${slug}`} legacyBehavior>
-        <a>
-          <h2 className="text-2xl font-bold  text-txtclr2 hover:underline">{title}</h2>
-        </a>
+      <Link href={`/blogs/${slug}`} className="block">
+        <h2 className="text-2xl font-bold text-txtclr2 hover:underline">{title}</h2>
       </Link>
       <p className="text-sm text-gray-500">{date} - {category}</p>
       <p>{description}</p>
